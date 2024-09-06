@@ -5,7 +5,17 @@
   "projects": {
     "tailwind-ui-app": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": true,
+          "inlineTemplate": true,
+          "inlineStyle": true,
+          "flat": true,
+          "path": "src/health-app/components",
+          "prefix": "hy",
+          "skipTests": true
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
